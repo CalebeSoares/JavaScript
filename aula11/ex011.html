@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de entrada</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        body{
+            font-family: 'Ubuntu';
+        }
+    </style>
+</head>
+<body>
+    <h1>País de Origem</h1>
+     <span>Qual o seu país: <input type="text" name="pais" id="pais"></span>    
+    <input type="button" value="Validar" onclick="validar()">
+    <div id="res"></div>
+
+
+    <script>
+        function validar(){
+            var pais = window.document.querySelector('input#pais')
+
+            if (pais == 'Brasil'){
+                res.innerHTML = '<p>Olá vocé é Brasileiro, Bem-Vindo de volta!</p>'
+            }else{                
+                res.innerHTML = '<p>Olá você é um estrangeiro, seja Bem Vindo!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
