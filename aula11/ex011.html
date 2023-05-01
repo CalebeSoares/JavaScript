@@ -16,21 +16,24 @@
 <body>
     <h1>País de Origem</h1>
     <p>Qual o Seu nome: <input type="text" name="nomepax" id="nomepax"></p>
-    <span>Qual o seu país: <input type="text" name="pais" id="pais" ></span>    
-    <p><input type="button" value="Validar" onclick="validar()"></p>
+    <span>Qual o seu país: <input type="text" name="pais" id="pais"></span>    
+    <p><input type="button" value="Validar" onclick="validar()">
+    </p>
+    
     <div id="res"></div>
 
 
     <script>
         function validar(){
             var pais = window.document.querySelector('input#pais')
-            
+            var nome = window.document.querySelector('input#nomepax')
             if (pais.value == 'Brasil'){
-                res.innerHTML = '<p>Olá vocé é Brasileiro, Bem-Vindo de volta!</p>'
+                res.innerHTML = `<p>Olá ${nome.value} vocé é Brasileiro, Bem-Vindo de volta!</p>`
             }else{                
-                res.innerHTML = '<p>Olá você é um estrangeiro, seja Bem Vindo!</p>'
+                res.innerHTML = `<p>Olá ${nome.value} você é um estrangeiro, seja Bem Vindo!</p>`
             
             //res.innerHTML = `${pais.value}`
+
             }
         }
     </script>
