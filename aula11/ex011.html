@@ -23,11 +23,13 @@
     <script>
         function validar(){
             var pais = window.document.querySelector('input#pais')
-
-            if (pais == 'Brasil'){
+            
+            if (pais.value == 'Brasil'){
                 res.innerHTML = '<p>Olá vocé é Brasileiro, Bem-Vindo de volta!</p>'
             }else{                
                 res.innerHTML = '<p>Olá você é um estrangeiro, seja Bem Vindo!</p>'
+            
+            //res.innerHTML = `${pais.value}`
             }
         }
     </script>
