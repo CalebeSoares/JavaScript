@@ -18,11 +18,20 @@ section{
     width: 600px;
     height: 400px;
     margin: auto;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.479);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.479);
 }
 
-section > div> img {
-    width: 350px;
+div#msg{
+
+    padding-bottom: 15px ;
+    font-size: 1.5em;
+}
+
+div > img{
+    width: 340px;
+}
+div{
+    text-align: center;
     
 }
 
