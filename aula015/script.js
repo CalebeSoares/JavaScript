@@ -8,10 +8,11 @@ function verificar(){
         window.alert('[ERRO] Veifique os dados e tente novamente!')
     }else{
         var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genero =  ''
+        var idade = ano - Number(fano.value)        
         var img = document.createElement('img')
         img.setAttribute('id','foto')
+
+        var genero =  ''
         if (fsex[0].checked){
             genero = 'Homem'
             if(idade >= 0 && idade <= 1){
@@ -54,14 +55,17 @@ function verificar(){
             } else{
                 //pessoa de idade
                 img.setAttribute('src','imagens/senhora.png')
-            }
-        }        
-
+            }          
+            
+            
+            
+        }
         
         res.innerHTML = `Você é ${genero} com ${idade} anos.`
-        res.style.textAlign = 'center'
-
+        
         res.appendChild(img)
+
+        
         
     }
 }
