@@ -13,22 +13,24 @@
     </header>
 
      <section>
-        <div>
-           <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano" min="1900" max="2023">
-           </p> 
-           <p>Sexo:
-                <input type="radio" name="radsex" id="radsex" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="radsex">
-                <label for="fem">Feminino</label>
-           </p>
+         <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="1900">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="isxmas" checked>
+                <label for="isxmas">Masculino</label>
+                <input type="radio" name="radsex" id="isxfem">
+                <label for="isxfem">Feminino</label>
+            </p>
+           
            <p>
                 <input type="button" value="Verificar" onclick="verificar()">
            </p> 
         </div>        
         <div id='res'>
-            Preencha os dados acima para ver o resultado...
+            Preencha os dados acima para ver o resultado...<br>
+            <!--<img id="foto">--> 
         </div>
     </section>
     <footer>

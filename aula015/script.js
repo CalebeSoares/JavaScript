@@ -21,13 +21,13 @@ function verificar(){
             } else if (idade >= 2 && idade <=10){
                 //crianca
                 img.setAttribute('src','imagens/criancaM.png')
-            } else if (idade >= 10 && idade <=15){
+            } else if (idade <=16){
                 //adolescente
                 img.setAttribute('src','imagens/menino.png')
-            } else if (idade >= 16 && idade <=30){
+            } else if (idade <=30){
                 //jovem 1
                 img.setAttribute('src', 'imagens/jovemM.png')
-            } else if (idade >= 31 && idade <= 55){
+            } else if (idade <= 55){
                 //jovem maduro
                 img.setAttribute('src','imagens/homem.png')
             } else{
@@ -43,13 +43,13 @@ function verificar(){
             } else if (idade >= 2 && idade <=10){
                 //crianca
                 img.setAttribute('src','imagens/criancaF.png')
-            } else if (idade >= 10 && idade <=15){
+            } else if (idade <=15){
                 //adolescente
                 img.setAttribute('src','imagens/menina.png')
-            } else if (idade >= 16 && idade <=30){
+            } else if (idade <=30){
                 //jovem 1
                 img.setAttribute('src', 'imagens/jovemF.png')
-            } else if (idade >= 31 && idade <= 55){
+            } else if (idade <= 55){
                 //jovem maduro
                 img.setAttribute('src','imagens/mulher.png')
             } else{
@@ -61,11 +61,10 @@ function verificar(){
             
         }
         
-        res.innerHTML = `Você é ${genero} com ${idade} anos.`
+        res.style.textAlign = 'center'
+        res.innerHTML = `Você é <strong>${genero}</strong> com <strong>${idade}</strong> anos.`        
         
-        res.appendChild(img)
-
-        
+        res.appendChild(img)        
         
     }
 }
