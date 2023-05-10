@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
-    <title>Modelo</title>
+    <title>Contando com JS</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Simples contador com JS</h1>
     </header>
 
     <section>
-        <div>
-
+        <div id="dados">
+            <p><label for="txti">Início: <input type="number" name="inicio" id="txti"></label></p> 
+            <p><label for="txtf">Fim: <input type="number" name="fim" id="txtf"></label></p>
+            <label for="txtp">Passo: <input type="number" name="passo" id="txtp"></label>
+            <p><input type="button" value="Contar" onclick="contar()"> <input type="reset" value="Limpar"></p>
         </div>
 
-        <div>
-
+        <div id="res">
+            Preparando contagem...
         </div>
     </section>
     
