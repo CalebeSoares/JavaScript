@@ -14,10 +14,12 @@
 
     <section>
         <div id="dados">
-            <p><label for="txti">Início: <input type="number" name="inicio" id="txti"></label></p> 
-            <p><label for="txtf">Fim: <input type="number" name="fim" id="txtf"></label></p>
-            <label for="txtp">Passo: <input type="number" name="passo" id="txtp"></label>
-            <p><input type="button" value="Contar" onclick="contar()"> <input type="reset" value="Limpar"></p>
+            <form id= "dados"action="#">
+                <p><label for="txti">Início: <input type="number" name="inicio" id="txti"></label></p>
+                <p><label for="txtf">Fim: <input type="number" name="fim" id="txtf"></label></p>
+                <label for="txtp">Passo: <input type="number" name="passo" id="txtp"></label>
+                <p><input type="button" value="Contar" onclick="contar()"> <input type="reset" value="Limpar" onclick="limpar()"></p>
+            </form>
         </div>
 
         <div id="res">
